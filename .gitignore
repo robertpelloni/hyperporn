@@ -1,0 +1,39 @@
+# Ignore video and audio files
+*.mp4
+*.mp3
+*.avi
+*.mkv
+*.mov
+*.wav
+*.m4a
+*.flac
+*.ogg
+*.webm
+*.wmv
+*.flv
+*.ts
+*.m2ts
+
+# Ignore large generated outputs
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore temp/intermediate files
+*.tmp
+*.log
+*.err
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Ignore database files (large binary)
+*.db
+*.sqlite
+*.db-shm
+*.db-wal
+
+# Keep memory and sessions tracked
+!/.hypernexus/
+!/.mimocode/
