@@ -1,12 +1,22 @@
 # STROBE Fade Mashup — Full Pipeline Documentation
 
-**Deliverables (v6 / current):**
+**Deliverables (v7 / current — NO hypnoshit):**
+- `ハイパーポルノ_ajja.mp4` — video + **Ajja** 2026 Dimension Festival NZ liveset (1.91 GB)
+- `ハイパーポルノ_jumpstreet.mp4` — video + **Jumpstreet** livesets chained (1.90 GB)
+- `ハイーポルノ_spacetribe.mp4` — video + **Space Tribe / Mad Tribe** singles + Ajja remainder (1.91 GB)
+- `rebuild_nohyp.py` — builds the 3 audio beds + muxes them onto the reused video
+- `beds/*.m4a` — RG-levelled audio beds (kept for cheap audio remuxes)
+
+The video (strobe cut + mask) is unchanged and reused — stream-copied from the old 2 GB deliverable; only the audio bed differs per mix. Audio is a plain music bed (no Emperor-Hypnos vocal/instruction layer).
+
+**Deliverables (v6 / previous — superseded):**
 - `ハイパーポルノ_full.mp4` — Ajja BGM + hypnoshit (full size)
 - `ハイパーポルノ_altaudio_full.mp4` — **Space Tribe singles mix** + Ajja remainder + hypnoshit (full size)
 - `ハイパーポルノ_altaudio_2GB.mp4` — sub-2 GB of the Space Tribe mix only
 
-**Status:** v6 — ReplayGain applied everywhere; hypnoshit normalized together; hyp at normal volume 0.95
-**Date:** 2026-10-18
+**Status (superseded v6):** — ReplayGain applied everywhere; hypnoshit normalized together; hyp at normal volume 0.95
+**Status:** v7 — hypnoshit removed; 3 music-bed porn mixes (Ajja / Jumpstreet / Space Tribe-Mad Tribe). Video stream reused, audio re-bedded (ReplayGain per track).
+**Date:** 2026-10-25
 
 ---
 
@@ -101,6 +111,32 @@ Total singles = **3,512.7 s** (the "first part"). Then **Ajja fills the remainde
 ---
 
 ## 4. Audio design
+
+### 4.0 v7 — No-hypnoshit beds (current)
+
+The v7 rebuild drops the hypnoshit vocal bed entirely. Audio = a single psytrance music bed per mix, ReplayGain-levelled per track (`volume=<rg>dB`) then concatenated to the exact video length (10,774.35 s). No `amix`, no `loudnorm`, no limiter (sources are mastered + RG-normalised). Bed audio is AAC 192 kbps, stream-copied into the mux (`-c:a copy`). Built by `rebuild_nohyp.py`:
+
+| Mix | Bed contents |
+|-----|--------------|
+| `ajja` | Ajja 2026 Dimension Festival NZ (live) — full set (10,774.336 s ≈ video) |
+| `jumpstreet` | Jumpstreet livesets chained to fill 3 h — Sunlight Festival 2025 → Dimension Festival DJ Set 2026 (trimmed). Edit the `JUMPSTREET` list in the script to change which sets. |
+| `spacetribe` | Space Tribe / Mad Tribe singles in the established seeded order (~3,513 s) + Ajja remainder (~7,261 s) — same pattern as the old "altaudio", minus hypnoshit |
+
+Space Tribe / Mad Tribe singles order (unchanged from v6):
+`Drop the Bomb → They Came from Uranus → Alien's Fiend → Out of This World → Atom Bombs → Alien's Slave → Sex, Drugs and Rock 'n Roll`.
+
+**Reuse trick:** because hypnoshit was audio-only, the finished masked video is identical across versions — so v7 copies the video stream from the old 2 GB deliverable (`ハイパーポルノ.mp4`, `-c:v copy`) and swaps only the audio. No re-cut, no re-fade, no video re-encode. To re-bed audio later, rebuild the bed and remux (`python rebuild_nohyp.py mux-one <name>`).
+
+### 4.0b Combined mix + 10-minute chunks (personal use)
+
+`build_combined.py` makes **one combined mix** with all three sources on a single timeline, then slices it into 10-minute files:
+
+- `ハイーポルノ_combined.mp4` — 3:00:00, video reused (`-c:v copy`). Audio bed = Space Tribe/Mad Tribe singles (58 min) → Jumpstreet Sunlight 2025 + Dimension DJ 2026 (30 min each) → Ajja (61 min). ReplayGain per track, AAC 192 kbps.
+- `chunks/hyperporn_combined_c01.mp4 … c18.mp4` — 18 standalone 720p60+AAC files, each ~600 s (last = 574 s remainder), stream-copied (keyframe-aligned, `+faststart`). ASCII filenames for upload-tool safety.
+
+Proportions are configurable at the top of `build_combined.py` (`JS_EACH`, the `contrib` list). Re-run `python build_combined.py combined` / `chunks` / `all`.
+
+> These outputs are for **personal / local use**. The assistant built + segmented the media but does not publish, upload, or automate any platform (X, tube sites, self-hosted WordPress, muse.ai, etc.).
 
 ### 4.1 BGM (Ajja)
 

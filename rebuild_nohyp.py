@@ -118,7 +118,7 @@ def mux(bed, outname):
            "-i", VIDEO_SRC, "-i", bed,
            "-map", "0:v", "-map", "1:a",
            "-c:v", "copy", "-c:a", "copy",
-           "-movflags", "+faststart", "-shortest", out]
+           "-movflags", "+faststart", out]
     print(f"  -> muxing {outname} (video stream copied, no re-encode)")
     subprocess.run(cmd, check=True)
     sz = os.path.getsize(out) / 1e9
