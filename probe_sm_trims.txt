@@ -1,0 +1,405 @@
+﻿
+== p_00 bost dur=463.8
+ HEAD
+  t=0.3 mean=145 std=64
+  t=1.0 mean=69 std=37 diff=83.6
+  t=2.0 mean=140 std=71 diff=91.4
+  t=3.0 mean=138 std=73 diff=73.0
+  t=5.0 mean=120 std=52 diff=75.7
+  t=7.0 mean=211 std=49 diff=98.8
+  t=10.0 mean=142 std=73 diff=91.1
+  t=15.0 mean=84 std=80 diff=119.1
+  t=20.0 mean=63 std=57 diff=80.9
+  t=25.0 mean=149 std=67 diff=108.9
+  t=30.0 mean=105 std=56 diff=72.9
+  t=40.0 mean=134 std=89 diff=86.7
+ TAIL
+  t=423.8 mean=126 std=40
+  t=433.8 mean=127 std=38 diff=51.1
+  t=443.8 mean=199 std=48 diff=79.8
+  t=448.8 mean=142 std=41 diff=71.3
+  t=453.8 mean=141 std=59 diff=53.2
+  t=456.8 mean=101 std=57 diff=71.5
+  t=458.8 mean=187 std=64 diff=94.0
+  t=460.8 mean=121 std=69 diff=94.4
+  t=461.8 mean=118 std=65 diff=30.1
+  t=462.8 mean=151 std=39 diff=72.6
+  t=463.5 mean=7 std=5 diff=143.5
+
+== p_01 csd2 dur=312.1
+ HEAD
+  t=0.3 mean=125 std=51
+  t=1.0 mean=129 std=55 diff=29.3
+  t=2.0 mean=131 std=56 diff=34.0
+  t=3.0 mean=160 std=61 diff=71.8
+  t=5.0 mean=161 std=73 diff=90.3
+  t=7.0 mean=103 std=39 diff=90.7
+  t=10.0 mean=162 std=65 diff=83.6
+  t=15.0 mean=129 std=47 diff=72.6
+  t=20.0 mean=129 std=60 diff=61.4
+  t=25.0 mean=93 std=48 diff=74.9
+  t=30.0 mean=145 std=55 diff=79.1
+  t=40.0 mean=91 std=48 diff=72.1
+ TAIL
+  t=272.1 mean=146 std=54
+  t=282.1 mean=143 std=48 diff=21.3
+  t=292.1 mean=148 std=54 diff=26.4
+  t=297.1 mean=140 std=51 diff=17.8
+  t=302.1 mean=138 std=45 diff=24.1
+  t=305.1 mean=133 std=49 diff=19.6
+  t=307.1 mean=134 std=53 diff=22.6
+  t=309.1 mean=113 std=41 diff=30.3
+  t=310.1 mean=124 std=48 diff=28.2
+  t=311.1 mean=202 std=52 diff=80.1
+  t=311.8 mean=255 std=1 diff=52.4
+
+== p_02 sm6 dur=346.6
+ HEAD
+  t=0.3 mean=173 std=4
+  t=1.0 mean=177 std=7 diff=5.0
+  t=2.0 mean=77 std=24 diff=99.9
+  t=3.0 mean=142 std=31 diff=65.9
+  t=5.0 mean=38 std=39 diff=107.5
+  t=7.0 mean=12 std=37 diff=39.2
+  t=10.0 mean=206 std=24 diff=194.4
+  t=15.0 mean=154 std=45 diff=62.1
+  t=20.0 mean=203 std=37 diff=59.7
+  t=25.0 mean=150 std=38 diff=62.0
+  t=30.0 mean=124 std=66 diff=64.9
+  t=40.0 mean=115 std=47 diff=64.2
+ TAIL
+  t=306.6 mean=104 std=47
+  t=316.6 mean=135 std=50 diff=71.4
+  t=326.6 mean=179 std=27 diff=52.8
+  t=331.6 mean=126 std=41 diff=60.6
+  t=336.6 mean=103 std=58 diff=59.3
+  t=339.6 mean=103 std=59 diff=30.4
+  t=341.6 mean=191 std=36 diff=89.5
+  t=343.6 mean=116 std=49 diff=81.1
+  t=344.6 mean=140 std=33 diff=46.4
+  t=345.6 mean=63 std=12 diff=77.2
+  t=346.3 mean=7 std=28 diff=59.8
+
+== p_03 smx dur=484.0
+ HEAD
+  t=0.3 mean=114 std=60
+  t=1.0 mean=219 std=2 diff=104.6
+  t=2.0 mean=19 std=51 diff=199.7
+  t=3.0 mean=14 std=36 diff=15.5
+  t=5.0 mean=9 std=33 diff=16.8
+  t=7.0 mean=36 std=72 diff=29.6
+  t=10.0 mean=95 std=62 diff=95.3
+  t=15.0 mean=97 std=62 diff=64.5
+  t=20.0 mean=166 std=51 diff=74.9
+  t=25.0 mean=125 std=50 diff=50.4
+  t=30.0 mean=16 std=29 diff=113.3
+  t=40.0 mean=54 std=52 diff=54.4
+ TAIL
+  t=444.0 mean=128 std=68
+  t=454.0 mean=89 std=71 diff=82.1
+  t=464.0 mean=148 std=51 diff=72.5
+  t=469.0 mean=145 std=56 diff=44.5
+  t=474.0 mean=79 std=40 diff=77.8
+  t=477.0 mean=83 std=42 diff=38.2
+  t=479.0 mean=181 std=50 diff=98.6
+  t=481.0 mean=177 std=52 diff=24.1
+  t=482.0 mean=105 std=32 diff=71.9
+  t=483.0 mean=95 std=54 diff=47.3
+  t=483.7 mean=1 std=3 diff=93.6
+
+== p_04 sm1 dur=229.2
+ HEAD
+  t=0.3 mean=55 std=50
+  t=1.0 mean=95 std=43 diff=42.8
+  t=2.0 mean=130 std=42 diff=48.5
+  t=3.0 mean=112 std=38 diff=32.9
+  t=5.0 mean=96 std=35 diff=36.5
+  t=7.0 mean=110 std=52 diff=46.7
+  t=10.0 mean=58 std=85 diff=66.5
+  t=15.0 mean=99 std=50 diff=87.5
+  t=20.0 mean=95 std=32 diff=53.8
+  t=25.0 mean=98 std=28 diff=38.9
+  t=30.0 mean=105 std=44 diff=40.6
+  t=40.0 mean=48 std=43 diff=65.9
+ TAIL
+  t=189.2 mean=58 std=39
+  t=199.2 mean=75 std=53 diff=47.3
+  t=209.2 mean=110 std=53 diff=73.9
+  t=214.2 mean=157 std=61 diff=67.6
+  t=219.2 mean=200 std=52 diff=68.3
+  t=222.2 mean=164 std=64 diff=75.6
+  t=224.2 mean=111 std=62 diff=84.9
+  t=226.2 mean=79 std=22 diff=54.4
+  t=227.2 mean=112 std=27 diff=40.2
+  t=228.2 mean=17 std=0 diff=94.8
+  t=228.9 mean=0 std=0 diff=17.0
+
+== p_05 scs dur=426.1
+ HEAD
+  t=0.3 mean=76 std=50
+  t=1.0 mean=115 std=42 diff=42.0
+  t=2.0 mean=143 std=40 diff=44.5
+  t=3.0 mean=127 std=37 diff=30.2
+  t=5.0 mean=112 std=35 diff=36.4
+  t=7.0 mean=104 std=48 diff=43.3
+  t=10.0 mean=113 std=33 diff=46.0
+  t=15.0 mean=0 std=0 diff=112.8
+  t=20.0 mean=35 std=48 diff=35.2
+  t=25.0 mean=34 std=45 diff=25.4
+  t=30.0 mean=91 std=50 diff=70.0
+  t=40.0 mean=41 std=56 diff=65.5
+ TAIL
+  t=386.1 mean=147 std=66
+  t=396.1 mean=115 std=62 diff=46.7
+  t=406.1 mean=182 std=64 diff=76.7
+  t=411.1 mean=170 std=87 diff=79.0
+  t=416.1 mean=157 std=60 diff=37.9
+  t=419.1 mean=148 std=56 diff=47.9
+  t=421.1 mean=161 std=58 diff=53.6
+  t=423.1 mean=149 std=61 diff=29.4
+  t=424.1 mean=157 std=60 diff=57.4
+  t=425.1 mean=181 std=53 diff=33.8
+  t=425.8 mean=194 std=49 diff=38.5
+
+== p_06 sm2 dur=438.1
+ HEAD
+  t=0.3 mean=55 std=46
+  t=1.0 mean=70 std=47 diff=15.9
+  t=2.0 mean=72 std=46 diff=7.4
+  t=3.0 mean=68 std=27 diff=12.2
+  t=5.0 mean=63 std=19 diff=12.0
+  t=7.0 mean=75 std=40 diff=19.1
+  t=10.0 mean=86 std=52 diff=26.0
+  t=15.0 mean=0 std=0 diff=86.3
+  t=20.0 mean=89 std=89 diff=88.5
+  t=25.0 mean=138 std=48 diff=92.2
+  t=30.0 mean=60 std=50 diff=90.0
+  t=40.0 mean=113 std=67 diff=81.6
+ TAIL
+  t=398.1 mean=156 std=48
+  t=408.1 mean=157 std=89 diff=75.9
+  t=418.1 mean=190 std=62 diff=81.8
+  t=423.1 mean=176 std=62 diff=27.8
+  t=428.1 mean=127 std=61 diff=81.5
+  t=431.1 mean=128 std=61 diff=43.7
+  t=433.1 mean=117 std=58 diff=37.1
+  t=435.1 mean=114 std=57 diff=41.5
+  t=436.1 mean=115 std=58 diff=35.9
+  t=437.1 mean=116 std=64 diff=38.6
+  t=437.8 mean=116 std=61 diff=44.4
+
+== p_07 sm3 dur=377.1
+ HEAD
+  t=0.3 mean=8 std=3
+  t=1.0 mean=3 std=1 diff=4.6
+  t=2.0 mean=142 std=40 diff=138.6
+  t=3.0 mean=104 std=44 diff=57.3
+  t=5.0 mean=105 std=42 diff=53.3
+  t=7.0 mean=119 std=38 diff=47.8
+  t=10.0 mean=133 std=42 diff=49.2
+  t=15.0 mean=118 std=30 diff=37.5
+  t=20.0 mean=99 std=38 diff=42.9
+  t=25.0 mean=108 std=46 diff=52.7
+  t=30.0 mean=124 std=70 diff=62.4
+  t=40.0 mean=108 std=37 diff=67.0
+ TAIL
+  t=337.1 mean=72 std=54
+  t=347.1 mean=96 std=41 diff=54.4
+  t=357.1 mean=99 std=66 diff=59.3
+  t=362.1 mean=82 std=35 diff=57.3
+  t=367.1 mean=110 std=43 diff=53.5
+  t=370.1 mean=171 std=44 diff=72.7
+  t=372.1 mean=164 std=46 diff=16.5
+  t=374.1 mean=162 std=44 diff=36.3
+  t=375.1 mean=158 std=43 diff=28.9
+  t=376.1 mean=0 std=0 diff=157.6
+  t=376.8 mean=0 std=0 diff=0.0
+
+== p_08 sm9 dur=574.0
+ HEAD
+  t=0.3 mean=87 std=62
+  t=1.0 mean=117 std=58 diff=76.2
+  t=2.0 mean=255 std=0 diff=138.4
+  t=3.0 mean=135 std=27 diff=119.9
+  t=5.0 mean=100 std=63 diff=62.8
+  t=7.0 mean=88 std=60 diff=55.6
+  t=10.0 mean=114 std=56 diff=58.5
+  t=15.0 mean=120 std=33 diff=50.8
+  t=20.0 mean=92 std=49 diff=56.3
+  t=25.0 mean=191 std=55 diff=114.8
+  t=30.0 mean=126 std=52 diff=78.8
+  t=40.0 mean=113 std=54 diff=62.7
+ TAIL
+  t=534.0 mean=4 std=22
+  t=544.0 mean=109 std=58 diff=106.5
+  t=554.0 mean=96 std=52 diff=65.3
+  t=559.0 mean=106 std=36 diff=51.2
+  t=564.0 mean=135 std=41 diff=52.6
+  t=567.0 mean=73 std=47 diff=71.8
+  t=569.0 mean=34 std=26 diff=52.7
+  t=571.0 mean=16 std=30 diff=25.2
+  t=572.0 mean=17 std=38 diff=12.3
+  t=573.0 mean=48 std=66 diff=40.6
+  t=573.7 mean=0 std=0 diff=47.7
+
+== p_09 sm7 dur=560.2
+ HEAD
+  t=0.3 mean=11 std=33
+  t=1.0 mean=168 std=53 diff=160.8
+  t=2.0 mean=204 std=44 diff=54.7
+  t=3.0 mean=90 std=40 diff=118.7
+  t=5.0 mean=82 std=69 diff=43.9
+  t=7.0 mean=154 std=50 diff=101.8
+  t=10.0 mean=101 std=65 diff=84.1
+  t=15.0 mean=131 std=55 diff=54.2
+  t=20.0 mean=74 std=56 diff=78.9
+  t=25.0 mean=111 std=40 diff=58.1
+  t=30.0 mean=109 std=54 diff=65.4
+  t=40.0 mean=157 std=45 diff=69.3
+ TAIL
+  t=520.2 mean=93 std=45
+  t=530.2 mean=100 std=60 diff=62.7
+  t=540.2 mean=30 std=42 diff=88.6
+  t=545.2 mean=30 std=44 diff=39.0
+  t=550.2 mean=61 std=65 diff=54.0
+  t=553.2 mean=69 std=58 diff=64.5
+  t=555.2 mean=32 std=52 diff=58.0
+  t=557.2 mean=25 std=40 diff=32.5
+  t=558.2 mean=23 std=35 diff=21.1
+  t=559.2 mean=15 std=22 diff=13.3
+  t=559.9 mean=10 std=13 diff=14.0
+
+== p_10 sm8 dur=555.2
+ HEAD
+  t=0.3 mean=39 std=33
+  t=1.0 mean=182 std=35 diff=143.0
+  t=2.0 mean=164 std=69 diff=64.4
+  t=3.0 mean=189 std=67 diff=88.9
+  t=5.0 mean=112 std=55 diff=109.1
+  t=7.0 mean=201 std=62 diff=94.0
+  t=10.0 mean=114 std=51 diff=104.2
+  t=15.0 mean=147 std=48 diff=65.5
+  t=20.0 mean=160 std=42 diff=45.9
+  t=25.0 mean=120 std=51 diff=55.7
+  t=30.0 mean=172 std=52 diff=62.0
+  t=40.0 mean=81 std=65 diff=110.6
+ TAIL
+  t=515.2 mean=84 std=28
+  t=525.2 mean=93 std=82 diff=65.9
+  t=535.2 mean=130 std=42 diff=82.3
+  t=540.2 mean=122 std=33 diff=43.9
+  t=545.2 mean=124 std=63 diff=56.5
+  t=548.2 mean=144 std=65 diff=63.5
+  t=550.2 mean=98 std=57 diff=70.8
+  t=552.2 mean=87 std=46 diff=35.5
+  t=553.2 mean=120 std=72 diff=60.3
+  t=554.2 mean=251 std=23 diff=131.9
+  t=554.9 mean=98 std=61 diff=153.7
+
+== p_11 sm5p1 dur=243.9
+ HEAD
+  t=0.3 mean=148 std=59
+  t=1.0 mean=150 std=53 diff=45.0
+  t=2.0 mean=170 std=50 diff=39.6
+  t=3.0 mean=159 std=51 diff=47.0
+  t=5.0 mean=175 std=39 diff=60.1
+  t=7.0 mean=118 std=43 diff=62.5
+  t=10.0 mean=193 std=62 diff=81.6
+  t=15.0 mean=124 std=60 diff=73.6
+  t=20.0 mean=252 std=12 diff=128.1
+  t=25.0 mean=1 std=5 diff=251.6
+  t=30.0 mean=135 std=57 diff=134.6
+  t=40.0 mean=69 std=62 diff=76.9
+ TAIL
+  t=203.9 mean=180 std=39
+  t=213.9 mean=210 std=55 diff=58.5
+  t=223.9 mean=112 std=55 diff=106.3
+  t=228.9 mean=166 std=40 diff=67.3
+  t=233.9 mean=198 std=53 diff=60.4
+  t=236.9 mean=129 std=63 diff=95.9
+  t=238.9 mean=85 std=54 diff=75.7
+  t=240.9 mean=178 std=40 diff=98.9
+  t=241.9 mean=142 std=39 diff=50.2
+  t=242.9 mean=121 std=50 diff=44.3
+  t=243.6 mean=102 std=47 diff=48.4
+
+== p_12 sm5p2 dur=406.5
+ HEAD
+  t=0.3 mean=46 std=26
+  t=1.0 mean=58 std=33 diff=22.6
+  t=2.0 mean=76 std=43 diff=35.6
+  t=3.0 mean=88 std=51 diff=37.3
+  t=5.0 mean=155 std=72 diff=97.0
+  t=7.0 mean=159 std=53 diff=61.9
+  t=10.0 mean=84 std=47 diff=88.3
+  t=15.0 mean=176 std=55 diff=100.9
+  t=20.0 mean=165 std=53 diff=53.4
+  t=25.0 mean=89 std=40 diff=89.0
+  t=30.0 mean=82 std=48 diff=21.4
+  t=40.0 mean=183 std=43 diff=106.1
+ TAIL
+  t=366.5 mean=112 std=40
+  t=376.5 mean=187 std=32 diff=78.7
+  t=386.5 mean=129 std=41 diff=64.3
+  t=391.5 mean=111 std=46 diff=51.6
+  t=396.5 mean=149 std=33 diff=51.3
+  t=399.5 mean=132 std=47 diff=54.3
+  t=401.5 mean=160 std=44 diff=47.6
+  t=403.5 mean=134 std=35 diff=39.0
+  t=404.5 mean=122 std=33 diff=21.9
+  t=405.5 mean=35 std=12 diff=87.1
+  t=406.2 mean=28 std=11 diff=7.6
+
+== p_13 scds dur=222.4
+ HEAD
+  t=0.3 mean=78 std=44
+  t=1.0 mean=79 std=45 diff=17.7
+  t=2.0 mean=79 std=45 diff=14.8
+  t=3.0 mean=76 std=45 diff=24.9
+  t=5.0 mean=155 std=47 diff=87.3
+  t=7.0 mean=120 std=67 diff=59.5
+  t=10.0 mean=123 std=65 diff=25.0
+  t=15.0 mean=139 std=61 diff=68.3
+  t=20.0 mean=143 std=57 diff=58.9
+  t=25.0 mean=116 std=56 diff=52.5
+  t=30.0 mean=117 std=55 diff=35.1
+  t=40.0 mean=6 std=20 diff=112.3
+ TAIL
+  t=182.4 mean=7 std=19
+  t=192.4 mean=163 std=63 diff=156.3
+  t=202.4 mean=15 std=28 diff=148.8
+  t=207.4 mean=20 std=35 diff=13.4
+  t=212.4 mean=172 std=60 diff=154.0
+  t=215.4 mean=107 std=73 diff=84.6
+  t=217.4 mean=93 std=85 diff=59.5
+  t=219.4 mean=154 std=58 diff=77.1
+  t=220.4 mean=138 std=55 diff=48.6
+  t=221.4 mean=56 std=30 diff=84.9
+  t=222.1 mean=9 std=5 diff=46.8
+
+== p_14 sm4 dur=163.1
+ HEAD
+  t=0.3 mean=47 std=41
+  t=1.0 mean=48 std=36 diff=35.6
+  t=2.0 mean=88 std=45 diff=58.8
+  t=3.0 mean=93 std=45 diff=40.1
+  t=5.0 mean=66 std=42 diff=51.1
+  t=7.0 mean=27 std=35 diff=53.0
+  t=10.0 mean=46 std=62 diff=42.1
+  t=15.0 mean=141 std=54 diff=108.2
+  t=20.0 mean=171 std=59 diff=47.9
+  t=25.0 mean=173 std=76 diff=67.9
+  t=30.0 mean=18 std=59 diff=158.9
+  t=40.0 mean=101 std=71 diff=100.9
+ TAIL
+  t=123.1 mean=167 std=76
+  t=133.1 mean=143 std=76 diff=92.5
+  t=143.1 mean=152 std=67 diff=83.6
+  t=148.1 mean=113 std=58 diff=88.8
+  t=153.1 mean=105 std=48 diff=43.7
+  t=156.1 mean=119 std=53 diff=44.5
+  t=158.1 mean=128 std=57 diff=40.2
+  t=160.1 mean=126 std=65 diff=48.1
+  t=161.1 mean=115 std=65 diff=38.3
+  t=162.1 mean=106 std=58 diff=55.8
+  t=162.8 mean=0 std=0 diff=105.9

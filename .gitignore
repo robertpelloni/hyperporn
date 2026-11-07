@@ -28,11 +28,11 @@ __pycache__/
 .venv/
 venv/
 
-# Ignore database files (large binary)
-*.db
-*.sqlite
-*.db-shm
-*.db-wal
+# Track databases (catalog + agent memory) — small, non-sensitive, required history
+# (no *.db ignore by policy)
+
+# Machine-local sync markers — never commit
+.stfolder
 
 # Keep memory and sessions tracked
 !/.hypernexus/
