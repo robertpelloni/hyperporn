@@ -1,0 +1,9 @@
+[submodule "vendor/topaz-ffmpeg"]
+	path = vendor/topaz-ffmpeg
+	url = https://github.com/robertpelloni/FFmpeg.git
+[submodule "vendor/ComfyUI"]
+	path = vendor/ComfyUI
+	url = https://github.com/Comfy-Org/ComfyUI.git
+[submodule "vendor/sd-scripts"]
+	path = vendor/sd-scripts
+	url = https://github.com/kohya-ss/sd-scripts.git

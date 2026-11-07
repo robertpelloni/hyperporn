@@ -37,3 +37,17 @@ venv/
 # Keep memory and sessions tracked
 !/.hypernexus/
 !/.mimocode/
+
+# ComfyUI pipeline: models, training data, outputs, venvs
+comfy-pipeline/models/**/*.safetensors
+comfy-pipeline/models/**/*.ckpt
+comfy-pipeline/dataset/raw/*
+!comfy-pipeline/dataset/raw/.gitkeep
+comfy-pipeline/output/*
+!comfy-pipeline/output/.gitkeep
+comfy-pipeline/.venv/
+comfy-pipeline/.venv-train/
+comfy-pipeline/logs/
+comfy-pipeline/configs/extra_model_paths.generated.yaml
+*.safetensors
+*.ckpt
