@@ -51,3 +51,15 @@ comfy-pipeline/logs/
 comfy-pipeline/configs/extra_model_paths.generated.yaml
 *.safetensors
 *.ckpt
+
+# Topaz 4K upscale artifacts (see TOPAZ_4K_UPSCALE.md) - proprietary binaries
+# and downloaded models are recreated from the Topaz MSI, never committed
+topaz-extract/
+topaz-redist/
+topaz-models/
+topaz-models-min/
+topaz_probe*.exe
+topaz_*.out
+topaz_*frame*.png
+upscale_out/
+upscale_segments/

@@ -320,3 +320,40 @@ Hypnoshit          2nd half − 60 s tail of each of 9 tracks, loudnorm I=-16 TP
 Mix                amix normalize=0 dropout_transition=0, alimiter 0.95, aac 320k
 2GB encode         libx264 veryfast 1200k/1300k/2400k, aac 192k, faststart (measured 1,904 MB)
 ```
+
+---
+
+## 11. Stage 2 — 4K60 Topaz upscale (segments → verify → reassemble)
+
+The finished 720p60 master can be AI-upscaled to **3840×2160 60 fps** with the
+free Topaz ffmpeg build — no Topaz GUI licence, no install (extract their MSI,
+point two env vars at it, run their bundled `ffmpeg.exe` with `tvai_up`).
+
+Full runbook: **[TOPAZ_4K_UPSCALE.md](TOPAZ_4K_UPSCALE.md)**. The short version:
+
+1. **Cut** the master video-only into 10 s segments (`cut_for_upscale.py`,
+   `-c:v copy` on the 26-frame keyframe grid → 1,078 files, manifest-verified
+   to sum to exactly **646,461 frames**). Pilot: 6 segments, 3,602 frames.
+2. **Upscale** each segment with Proteus v4 (`upscale_topaz.py`, resumable,
+   per-segment frame verification):
+   `tvai_up=model=prob-4:scale=0:w=3840:h=2160,scale=3840:2160,format=nv12`
+   into a hardware HEVC encoder (Topaz's ffmpeg has no libx264/x265).
+3. **Reassemble** (`reassemble_upscaled.py`): frame-gated concat (hard-fails
+   unless the total is 646,461) + remux any `beds/*.m4a`. Video is identical
+   across mixes — upscale once, bed many.
+
+Proven on the laptop (Intel HD 520, CPU path): 320×180→720p 1 s clip and a
+**1280×720→3840×2160 1 s clip** (`topaz_test_real1s_4k.mp4`, 60 frames, exit 0).
+Laptop speed was ~1.2–1.5 min/frame at full res — the 3-hour job is a
+**GPU-machine job** (see the runbook's checklist for what git syncs and what
+must be copied by hand).
+
+Two gotchas that are easy to miss:
+
+- **Watermark:** without a Topaz login (`auth.tpz`), output carries a large
+  "Topaz Labs" watermark. Signing in once in their app removes it; there is
+  no ffmpeg flag for it, and this pipeline does not bypass it.
+- **The free redistributable alone does not run** (no `ffmpeg.exe`, missing
+  `topaz_rlm.dll`). Extract `TopazVideo-1.2.1.msi` with `msiexec /a` instead,
+  and use a **minimal model dir** (`prob-4.json` + `tvai.tz`) or every call
+  spends minutes scanning all 86 model definitions.
