@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DJ_PLAYLISTS Version="1.0.0">
+  <PRODUCT Name="AutoDJ" Version="7.3.0" Company="robertpelloni" />
+  <COLLECTION Entries="10">
+    <TRACK TrackID="1" Name="Ajja - Dimension Festival excerpt.mp3" Artist="Auto DJ" Genre="Progressive" Kind="FLAC File" Size="0" TotalTime="4204" Location="file://localhostC:\Users\hyper\workspace\auto_dj_script\psyset_hyperporn\Ajja - Dimension Festival excerpt.mp3" AverageBpm="143.5546875" Tonality="D# Major (5B)">
+      <POSITION_MARK Name="Transition Start" Type="0" Start="0.0" Num="0" />
+    </TRACK>
+    <TRACK TrackID="2" Name="Mad Tribe - 2017 - Out of This World.mp3" Artist="Auto DJ" Genre="Progressive" Kind="FLAC File" Size="0" TotalTime="558" Location="file://localhostC:\Users\hyper\workspace\auto_dj_script\psyset_hyperporn\Mad Tribe - 2017 - Out of This World.mp3" AverageBpm="150.0" Tonality="D# Minor (2A)">
+      <POSITION_MARK Name="Transition Start" Type="0" Start="4178.187" Num="0" />
+    </TRACK>
+    <TRACK TrackID="3" Name="Mad Tribe - 2017 - Drop the Bomb.mp3" Artist="Auto DJ" Genre="Progressive" Kind="FLAC File" Size="0" TotalTime="511" Location="file://localhostC:\Users\hyper\workspace\auto_dj_script\psyset_hyperporn\Mad Tribe - 2017 - Drop the Bomb.mp3" AverageBpm="147.0" Tonality="D# Minor (2A)">
+      <POSITION_MARK Name="Transition Start" Type="0" Start="4710.205" Num="0" />
+    </TRACK>
+    <TRACK TrackID="4" Name="Space Tribe &amp; Dickster - 2017 - Alien's Fiend.mp3" Artist="Auto DJ" Genre="Progressive" Kind="FLAC File" Size="0" TotalTime="544" Location="file://localhostC:\Users\hyper\workspace\auto_dj_script\psyset_hyperporn\Space Tribe &amp; Dickster - 2017 - Alien's Fiend.mp3" AverageBpm="143.5546875" Tonality="F Minor (4A)">
+      <POSITION_MARK Name="Transition Start" Type="0" Start="5175.076" Num="0" />
+    </TRACK>
+    <TRACK TrackID="5" Name="Space Tribe &amp; Laughing Buddha - 2017 - Atom Bombs.mp3" Artist="Auto DJ" Genre="Progressive" Kind="FLAC File" Size="0" TotalTime="539" Location="file://localhostC:\Users\hyper\workspace\auto_dj_script\psyset_hyperporn\Space Tribe &amp; Laughing Buddha - 2017 - Atom Bombs.mp3" AverageBpm="148.00313234142521" Tonality="F# Minor (11A)">
+      <POSITION_MARK Name="Transition Start" Type="0" Start="5635.154" Num="0" />
+    </TRACK>
+    <TRACK TrackID="6" Name="Mad Tribe - 2017 - They Came from Uranus.mp3" Artist="Auto DJ" Genre="Progressive" Kind="FLAC File" Size="0" TotalTime="511" Location="file://localhostC:\Users\hyper\workspace\auto_dj_script\psyset_hyperporn\Mad Tribe - 2017 - They Came from Uranus.mp3" AverageBpm="143.5546875" Tonality="E Minor (9A)">
+      <POSITION_MARK Name="Transition Start" Type="0" Start="6122.573" Num="0" />
+    </TRACK>
+    <TRACK TrackID="7" Name="Jumpstreet - Dimension Festival excerpt.mp3" Artist="Auto DJ" Genre="Full-On" Kind="FLAC File" Size="0" TotalTime="1933" Location="file://localhostC:\Users\hyper\workspace\auto_dj_script\psyset_hyperporn\Jumpstreet - Dimension Festival excerpt.mp3" AverageBpm="150.383631713555" Tonality="A Minor (8A)">
+      <POSITION_MARK Name="Transition Start" Type="0" Start="6604.393" Num="0" />
+    </TRACK>
+    <TRACK TrackID="8" Name="Jumpstreet - Sunlight Festival excerpt.mp3" Artist="Auto DJ" Genre="Full-On" Kind="FLAC File" Size="0" TotalTime="1885" Location="file://localhostC:\Users\hyper\workspace\auto_dj_script\psyset_hyperporn\Jumpstreet - Sunlight Festival excerpt.mp3" AverageBpm="146.617513694812" Tonality="A Minor (8A)">
+      <POSITION_MARK Name="Transition Start" Type="0" Start="8510.793" Num="0" />
+    </TRACK>
+    <TRACK TrackID="9" Name="Mad Tribe - 2017 - Alien's Slave.mp3" Artist="Auto DJ" Genre="Full-On" Kind="FLAC File" Size="0" TotalTime="517" Location="file://localhostC:\Users\hyper\workspace\auto_dj_script\psyset_hyperporn\Mad Tribe - 2017 - Alien's Slave.mp3" AverageBpm="145.00219202104338" Tonality="G# Major (4B)">
+      <POSITION_MARK Name="Transition Start" Type="0" Start="10366.662" Num="0" />
+    </TRACK>
+    <TRACK TrackID="10" Name="Stryker &amp; Space Tribe - 2017 - S, D and Rock 'n Roll.mp3" Artist="Auto DJ" Genre="Full-On" Kind="FLAC File" Size="0" TotalTime="470" Location="file://localhostC:\Users\hyper\workspace\auto_dj_script\psyset_hyperporn\Stryker &amp; Space Tribe - 2017 - S, D and Rock 'n Roll.mp3" AverageBpm="145.00219202104338" Tonality="D# Minor (2A)">
+      <POSITION_MARK Name="Transition Start" Type="0" Start="10856.62" Num="0" />
+    </TRACK>
+  </COLLECTION>
+  <PLAYLISTS>
+    <NODE Name="ROOT" Type="0">
+      <NODE Name="Auto DJ Master Set" Type="1" KeyType="0" Entries="10">
+        <TRACK Key="1" />
+        <TRACK Key="2" />
+        <TRACK Key="3" />
+        <TRACK Key="4" />
+        <TRACK Key="5" />
+        <TRACK Key="6" />
+        <TRACK Key="7" />
+        <TRACK Key="8" />
+        <TRACK Key="9" />
+        <TRACK Key="10" />
+      </NODE>
+    </NODE>
+  </PLAYLISTS>
+</DJ_PLAYLISTS>
