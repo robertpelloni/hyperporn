@@ -55,3 +55,5 @@ rebuild catalogs, trims, and normalizes them like the existing 15
 (`intro_trims.json` / `outro_trims.json` workflow, then GOP26
 intermediates). Until then, each SM second would repeat ~3.1x against
 the new AI content alone.
+
+Update 2026-11-23 (later): csd1 added ( Cum Slut Destiny 1, 221s, 640x360 - low-res, ESRGAN x4 tier) plus 9 more unique titles (wct, bcwt, sas, bost2, smb1, smb3, bcst, uys, cw). Deduped pool: 25 files. See NEW_SM.md + dedupe_report.json.

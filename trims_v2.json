@@ -1,0 +1,127 @@
+{
+  "csd1.mp4": {
+    "dur": 221.154,
+    "head_trim_s": 2,
+    "tail_trim_s": 0
+  },
+  "ext01.mp4": {
+    "dur": 685.6,
+    "head_trim_s": 0,
+    "tail_trim_s": 0
+  },
+  "ext02.mp4": {
+    "dur": 300.9,
+    "head_trim_s": 0,
+    "tail_trim_s": 0
+  },
+  "ext03.mp4": {
+    "dur": 300.9,
+    "head_trim_s": 0,
+    "tail_trim_s": 0
+  },
+  "ext04.mp4": {
+    "dur": 300.9,
+    "head_trim_s": 0,
+    "tail_trim_s": 0
+  },
+  "ext05.mp4": {
+    "dur": 3596.92,
+    "head_trim_s": 0,
+    "tail_trim_s": 0
+  },
+  "ext06.mp4": {
+    "dur": 3742.92,
+    "head_trim_s": 0,
+    "tail_trim_s": 0
+  },
+  "ext07.mp4": {
+    "dur": 284.309,
+    "head_trim_s": 0,
+    "tail_trim_s": 2.0
+  },
+  "ext08.mp4": {
+    "dur": 960.597,
+    "head_trim_s": 0,
+    "tail_trim_s": 0
+  },
+  "ext09.mp4": {
+    "dur": 1099.307,
+    "head_trim_s": 0,
+    "tail_trim_s": 0
+  },
+  "ext10.mp4": {
+    "dur": 410.18,
+    "head_trim_s": 0,
+    "tail_trim_s": 0
+  },
+  "ext11.mp4": {
+    "dur": 1171.472,
+    "head_trim_s": 0,
+    "tail_trim_s": 0
+  },
+  "ext12.mp4": {
+    "dur": 240.0,
+    "head_trim_s": 1,
+    "tail_trim_s": 0
+  },
+  "ext13.mp4": {
+    "dur": 300.031,
+    "head_trim_s": 0,
+    "tail_trim_s": 0
+  },
+  "ext14.mp4": {
+    "dur": 620.031,
+    "head_trim_s": 0,
+    "tail_trim_s": 0
+  },
+  "ext15.mp4": {
+    "dur": 3735.0,
+    "head_trim_s": 1,
+    "tail_trim_s": 2.0
+  },
+  "wct.mp4": {
+    "dur": 228.167,
+    "head_trim_s": 5,
+    "tail_trim_s": 4.0
+  },
+  "bcwt.mp4": {
+    "dur": 357.167,
+    "head_trim_s": 1,
+    "tail_trim_s": 4.0
+  },
+  "sas.mp4": {
+    "dur": 317.133,
+    "head_trim_s": 5,
+    "tail_trim_s": 4.0
+  },
+  "smb1.mp4": {
+    "dur": 180.133,
+    "head_trim_s": 5,
+    "tail_trim_s": 4.0
+  },
+  "bost2.mp4": {
+    "dur": 317.133,
+    "head_trim_s": 1,
+    "tail_trim_s": 4.0
+  },
+  "smb3.mp4": {
+    "dur": 330.133,
+    "head_trim_s": 9,
+    "tail_trim_s": 0
+  },
+  "bcst.mp4": {
+    "dur": 473.067,
+    "head_trim_s": 1,
+    "tail_trim_s": 0
+  },
+  "uys.mp4": {
+    "dur": 227.133,
+    "head_trim_s": 9,
+    "tail_trim_s": 0
+  },
+  "cw.mp4": {
+    "dur": 183.233,
+    "head_trim_s": 5,
+    "tail_trim_s": 6.0
+  }
+}
