@@ -30,3 +30,5 @@ then concat after the v8 master.
 Total new duration: **17749.1 s** (4.93 h). v8 master is 10774.4 s, so the extended cut is ~28523 s (7.92 h).
 
 Note: the three Dom8natriX files have identical duration/resolution but different SHA-256 hashes (re-encodes/variants), so all three are kept.
+
+Location update 2026-11-23: files now live in `_ai/ext01.mp4` .. `_ai/ext15.mp4` (moved from repo root). Sissymaker sources are in `_sm/`; see `_sm/MISSING.md`.

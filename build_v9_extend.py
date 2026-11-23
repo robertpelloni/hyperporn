@@ -37,7 +37,7 @@ def main():
     entries = json.loads((WORK / "new_videos.json").read_text(encoding="utf-8"))
     segs = []
     for e in entries:
-        src = WORK / e["new_name"]
+        src = WORK / "_ai" / e["new_name"]
         seg = OUTDIR / f"{src.stem}_seg.mp4"
         segs.append(seg)
         dur, _ = probe(src)

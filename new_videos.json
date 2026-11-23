@@ -10,7 +10,8 @@
     "vcodec": "h264",
     "acodec": "aac",
     "size_bytes": 1286789946,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext02.mp4",
@@ -23,7 +24,8 @@
     "vcodec": "h264",
     "acodec": "aac",
     "size_bytes": 310301382,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext03.mp4",
@@ -36,7 +38,8 @@
     "vcodec": "h264",
     "acodec": "aac",
     "size_bytes": 308238727,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext04.mp4",
@@ -49,7 +52,8 @@
     "vcodec": "h264",
     "acodec": "aac",
     "size_bytes": 308598037,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext05.mp4",
@@ -62,7 +66,8 @@
     "vcodec": "h264",
     "acodec": "aac",
     "size_bytes": 1911965368,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext06.mp4",
@@ -75,7 +80,8 @@
     "vcodec": "h264",
     "acodec": "aac",
     "size_bytes": 1990171934,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext07.mp4",
@@ -88,7 +94,8 @@
     "vcodec": "h264",
     "acodec": "aac",
     "size_bytes": 145439691,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext08.mp4",
@@ -101,7 +108,8 @@
     "vcodec": "h264",
     "acodec": "aac",
     "size_bytes": 370231553,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext09.mp4",
@@ -114,7 +122,8 @@
     "vcodec": "h264",
     "acodec": "aac",
     "size_bytes": 814875586,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext10.mp4",
@@ -127,7 +136,8 @@
     "vcodec": "hevc",
     "acodec": "aac",
     "size_bytes": 1597193087,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext11.mp4",
@@ -140,7 +150,8 @@
     "vcodec": "h264",
     "acodec": "aac",
     "size_bytes": 4107201911,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext12.mp4",
@@ -153,7 +164,8 @@
     "vcodec": "hevc",
     "acodec": "aac",
     "size_bytes": 1147045944,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext13.mp4",
@@ -166,7 +178,8 @@
     "vcodec": "h264",
     "acodec": "aac",
     "size_bytes": 612736625,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext14.mp4",
@@ -179,7 +192,8 @@
     "vcodec": "h264",
     "acodec": "aac",
     "size_bytes": 1276100474,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   },
   {
     "new_name": "ext15.mp4",
@@ -192,6 +206,7 @@
     "vcodec": "h264",
     "acodec": "aac",
     "size_bytes": 1832303395,
-    "status": "cataloged"
+    "status": "cataloged",
+    "folder": "_ai"
   }
 ]

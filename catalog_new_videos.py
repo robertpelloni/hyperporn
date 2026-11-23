@@ -54,7 +54,7 @@ def main():
     entries = []
     for i, name in enumerate(ORIGINALS, 1):
         new = f"ext{i:02d}.mp4"
-        src, dst = WORK / name, WORK / new
+        src, dst = WORK / name, WORK / "_ai" / new
         if dst.exists() and not src.exists():
             entries.append({"new_name": new, "original_name": name, "status": "already-renamed"})
             continue
@@ -90,7 +90,7 @@ def main():
     (WORK / "NEW_VIDEOS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     if "--rename" in sys.argv:
         for e in entries:
-            src, dst = WORK / e["original_name"], WORK / e["new_name"]
+            src, dst = WORK / e["original_name"], WORK / "_ai" / e["new_name"]
             if src.exists():
                 src.rename(dst); print(f"renamed -> {dst.name}")
     print(f"total={total:.1f}s entries={len(entries)}")
