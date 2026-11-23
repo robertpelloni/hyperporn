@@ -1,3 +1,16 @@
+# HANDOFF - 2026-11-23 - Catch-up + v9 extension (v1.2.0)
+
+Current state is in CATCHUP_2026-11-23.md (prior Muse + Antigravity
+sessions, both checkouts, upscaling truth, sissy-pool math). Finals on G:
+hyperporn_v8_autodj.mp4 / hyperporn_v8_hypno.mp4 (10,774.4 s) and
+hyperporn_v9_extended.mp4 (v8 + ext01..ext15, 28,523.5 s, frame-verified).
+New sources are ext01.mp4..ext15.mp4; original titles only in
+NEW_VIDEOS.md. Rebuild/extend: python build_v9_extend.py (resumable;
+segments in liveset60_v9_ext/). Upscaling: do not start a full 4K master
+on the GTX 1060 - see the catch-up file.
+
+---
+
 # HANDOFF — 2026-11-07 — Repository sync & intelligent merge (v1.1.0)
 
 ## Step 1 — Upstream tracking & submodule sanitization

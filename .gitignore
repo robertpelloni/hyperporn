@@ -64,3 +64,6 @@ topaz_*.out
 topaz_*frame*.png
 upscale_out/
 upscale_segments/
+
+# Downloaded ffmpeg essentials (260 MB, recreated from gyan.dev builds)
+tools/
