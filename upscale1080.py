@@ -70,13 +70,19 @@ def run_pass(src, dst, info):
 
 def run_ai(src, dst, info, clip_work):
     # 10 s source segments -> PNG frames -> ESRGAN x2 -> 1080p60 segment
+    # A final sliver (<1 s) merges into the previous segment: extracting
+    # it alone can yield zero frames (smb3 seg33, 2026-11-24).
+    bounds = []
+    t = 0.0
+    while t < info["dur"] - 0.05:
+        d = min(SEG_S, info["dur"] - t)
+        if info["dur"] - (t + d) < 1.0:
+            d = info["dur"] - t
+        bounds.append((t, d)); t += d
     segs = []
-    nseg = int(info["dur"] // SEG_S) + (1 if info["dur"] % SEG_S else 0)
-    for si in range(nseg):
+    for si, (start, seg_dur) in enumerate(bounds):
         seg = clip_work / f"seg_{si:04d}.mp4"
         segs.append(seg)
-        start = si * SEG_S
-        seg_dur = min(SEG_S, info["dur"] - start)
         if done_ok(seg, round(seg_dur * 60)):
             continue
         fin, fout = clip_work / f"f{si}", clip_work / f"u{si}"
@@ -108,7 +114,7 @@ def run_ai(src, dst, info, clip_work):
         shutil.rmtree(fin, ignore_errors=True); shutil.rmtree(fout, ignore_errors=True)
         if r.returncode != 0 or not done_ok(seg, round(seg_dur * 60)):
             log(f"seg encode FAIL {src.name} seg{si} {(r.stderr or '')[-200:]}"); return False
-        log(f"  {src.name} seg {si+1}/{nseg} ok (free {free_gb():.1f} GB)")
+        log(f"  {src.name} seg {si+1}/{len(bounds)} ok (free {free_gb():.1f} GB)")
         if free_gb() < 5:
             log("DISK LOW - abort"); return False
     listf = clip_work / "list.txt"
