@@ -739,5 +739,19 @@
     "smx",
     "uys",
     "wct"
+  ],
+  "batch5_2026-11-24": [
+    {
+      "moved": "5966245-1080p.mp4",
+      "kept": "sm7",
+      "avg_bit_diff": 0.32,
+      "reason": "near-identical to sm7"
+    },
+    {
+      "moved": "EmperorHypnos - Sissy Maker 7 BBC Edition.mp4",
+      "kept": "sm7",
+      "avg_bit_diff": 6.5,
+      "reason": "same frame sequence as sm7 at 720x480; possible overlay differences not visible to aHash - kept in _dup for review"
+    }
   ]
 }

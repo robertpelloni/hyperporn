@@ -16,3 +16,5 @@ Total new SM: 1729.8 s across 6 files. Note `sas.mp4` and `bost2.mp4` share dura
 Second wave (same day): `bcst.mp4` (Black Cock Slut Trainer, 473.1s 426x240), `uys.mp4` (Under your spell, 227.1s), `cw.mp4` (Cockwhore, 183.2s 720p). Deduped to `_sm/_dup/`: scs2, scds2v, Sissymaker (see dedupe_report.json). Kept SM pool is now 25 files, 8,567s trimmed.
 
 Batch 4 (2026-11-23 late): sgas, ley1-ley5 (Leyendecker 01-05), drip1 - all 640x360, 3,957s total, no duplicates (dedupe_report.json). Trims in trims_v2.json. Compiled into ultramix_ep3 via build_episode3.py (AI side ext07-ext11).
+
+Batch 5 (2026-11-24): two Sissy Maker 7 copies arrived (5966245-1080p.mp4, EmperorHypnos - Sissy Maker 7 BBC Edition.mp4) - both deduped as sm7 duplicates (avg bit diff 0.32 / 6.5) and quarantined in _sm/_dup/. SM pool unchanged at 32.
