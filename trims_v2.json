@@ -123,5 +123,40 @@
     "dur": 183.233,
     "head_trim_s": 5,
     "tail_trim_s": 6.0
+  },
+  "sgas.mp4": {
+    "dur": 488.1,
+    "head_trim_s": 3,
+    "tail_trim_s": 2.0
+  },
+  "ley1.mp4": {
+    "dur": 249.322,
+    "head_trim_s": 4,
+    "tail_trim_s": 0
+  },
+  "ley2.mp4": {
+    "dur": 331.349,
+    "head_trim_s": 0,
+    "tail_trim_s": 4.0
+  },
+  "ley3.mp4": {
+    "dur": 269.056,
+    "head_trim_s": 6,
+    "tail_trim_s": 0
+  },
+  "ley4.mp4": {
+    "dur": 318.5,
+    "head_trim_s": 0,
+    "tail_trim_s": 2.0
+  },
+  "ley5.mp4": {
+    "dur": 459.8,
+    "head_trim_s": 1,
+    "tail_trim_s": 0
+  },
+  "drip1.mp4": {
+    "dur": 1840.958,
+    "head_trim_s": 15,
+    "tail_trim_s": 2.0
   }
 }

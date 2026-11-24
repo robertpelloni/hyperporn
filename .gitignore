@@ -67,3 +67,6 @@ upscale_segments/
 
 # Downloaded ffmpeg essentials (260 MB, recreated from gyan.dev builds)
 tools/
+
+# 1080p60 upscale outputs + ESRGAN work frames (local media, regenerable)
+_up1080/

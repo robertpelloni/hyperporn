@@ -14,3 +14,5 @@ All in `_sm/`. Very low-res downloads (240p/360p) - AI tier in `upscale1080.py` 
 Total new SM: 1729.8 s across 6 files. Note `sas.mp4` and `bost2.mp4` share duration (317.1 s) but different hashes - kept as separate files pending content check.
 
 Second wave (same day): `bcst.mp4` (Black Cock Slut Trainer, 473.1s 426x240), `uys.mp4` (Under your spell, 227.1s), `cw.mp4` (Cockwhore, 183.2s 720p). Deduped to `_sm/_dup/`: scs2, scds2v, Sissymaker (see dedupe_report.json). Kept SM pool is now 25 files, 8,567s trimmed.
+
+Batch 4 (2026-11-23 late): sgas, ley1-ley5 (Leyendecker 01-05), drip1 - all 640x360, 3,957s total, no duplicates (dedupe_report.json). Trims in trims_v2.json. Compiled into ultramix_ep3 via build_episode3.py (AI side ext07-ext11).

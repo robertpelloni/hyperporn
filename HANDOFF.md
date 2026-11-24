@@ -1,3 +1,18 @@
+# HANDOFF - 2026-11-23 late - Ultramix episodes done, ESRGAN tier running (v1.2.0+)
+
+Ultramix (1080p60, frame-verified): ultramix_ep1_1080p60.mp4 (G:, 512,408f, 8,540s),
+ultramix_ep2_1080p60.mp4 (C: workspace checkout, 512,408f, 8,540s - G: was low),
+ultramix_ep3_1080p60.mp4 (G:, 470,132f, 7,835.5s, batch-4 SM x ext07-11).
+Rebuild: python build_episodes.py / build_episode3.py (scratch: C:\\hyperporn_ultra_work).
+1080p60 library: PASS tier DONE (_up1080/, incl. ext15 fix for attached-pic streams);
+AI/ESRGAN tier RUNNING via: python upscale1080.py ai  (resumable, frame-verified;
+~21,100s of sub-1080 content at ~15x slow = multi-day background grind - rerun to continue).
+SM pool deduped to 32 files (_sm/_dup/ quarantines 3). New SM drop-in: put files in _sm/,
+then: python detect_trims_v2.py; python dedupe_newsm.py; python upscale1080.py ai.
+Full state: CATCHUP_2026-11-23.md, UPSCALE_1080.md, NEW_VIDEOS.md, NEW_SM.md.
+
+---
+
 # HANDOFF - 2026-11-23 - Catch-up + v9 extension (v1.2.0)
 
 Current state is in CATCHUP_2026-11-23.md (prior Muse + Antigravity

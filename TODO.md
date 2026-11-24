@@ -1,8 +1,9 @@
 # TODO
 
-- Done 2026-11-23: v8 liveset completed (hyperporn_v8_autodj.mp4, 646,464 frames verified); v9 extension built (hyperporn_v9_extended.mp4, 1,711,400 frames verified).
-- Optional: extend the hypno variant the same way (segments in liveset60_v9_ext/ are reusable; audio is 192k vs hypno 320k).
-- Optional: alternating sissy/new re-cut is NOT 1:1 feasible (sissy pool 5,649.8 s vs new 17,749.1 s; would repeat ~3.1x) - decide if a partial paired section is wanted.
-- Upscaling: no full-master 4K run on this GPU (Topaz ~42 d watermarked; Real-ESRGAN ~110 d clean). Realistic: 1080p ESRGAN on selected chunks, or a stronger GPU. See CATCHUP_2026-11-23.md.
-- Prune stale *.log / *.err build logs once v9 is locked.
-- Decide retention for backup/wip-leader-sync-20261107 (redundant Syncthing marker only - safe to delete after confirmation).
+- RUNNING: ESRGAN AI upscale tier - continue with: python upscale1080.py ai (resumable; PASS tier done). ~50-85 h total on GTX 1060; wet + ext05/ext06 dominate.
+- When _up1080 library is complete, rebuild ultramix episodes from the ESRGAN versions (build_episodes.py intermediates point at _sm/_ai lanczos versions today).
+- More SM may still arrive in _sm/: catalog/dedupe/trim/upscale per NEW_SM.md workflow, then a build_episode4.py from remaining AI (ext11 remainder, ext12..ext15, wet).
+- G: disk is tight (finals ~19 GB each). ultramix_ep2 lives in the C: checkout for this reason; move it when G: has room.
+- Roast coordination with gemini/muse.ai/chatgpt: parked by user 2026-11-23, coordinate later.
+- Optional: extend the hypno variant the same way as v9 (segments in liveset60_v9_ext/ were deleted after v9 verified; regenerable).
+- Prune stale *.log / *.err build logs once everything is locked.

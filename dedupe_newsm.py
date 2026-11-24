@@ -13,10 +13,10 @@ from pathlib import Path
 
 WORK = Path(__file__).resolve().parent
 FFD = WORK / "tools" / "ffmpeg-7.1.1-essentials_build" / "bin"
-NEW = ["csd1", "wct", "bcwt", "sas", "smb1", "bost2", "smb3",
-       "bcst", "uys", "cw", "scs2", "scds2v"]
-OLD = ["bost", "csd2", "scds", "scs", "sm1", "sm2", "sm3", "sm4",
-       "sm5p1", "sm5p2", "sm6", "sm7", "sm8", "sm9", "smx"]
+NEW = ["sgas", "ley1", "ley2", "ley3", "ley4", "ley5", "drip1"]
+OLD = ["bost", "csd2", "csd1", "scds", "scs", "sm1", "sm2", "sm3", "sm4",
+       "sm5p1", "sm5p2", "sm6", "sm7", "sm8", "sm9", "smx",
+       "wct", "bcwt", "sas", "bost2", "smb1", "smb3", "bcst", "uys", "cw"]
 
 def probe(p):
     r = subprocess.run([str(FFD / "ffprobe.exe"), "-v", "error", "-show_entries",

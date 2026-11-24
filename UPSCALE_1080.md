@@ -21,7 +21,25 @@ Outputs: `_up1080/<_sm|_ai>/<stem>_1080p60.mp4` (audio AAC 192k/48k).
 The v9 segments in `liveset60_v9_ext/` were deleted after the v9
 final verified (18.9 GB freed; regenerable via `build_v9_extend.py`).
 
-## Ultramix episodes (`build_episodes.py`)
+## Ultramix episodes (`build_episodes.py`, `build_episode3.py`) — DONE
+
+Verified finals (1920x1080, 60 fps, frame-exact):
+
+| Episode | Pool | Frames | Duration | Location |
+|---|---|---:|---:|---|
+| `ultramix_ep1_1080p60.mp4` | SM(25) x ext01.. | 512,408 | 8,540.3 s | `G:\hyperporn\` (17.4 GB) |
+| `ultramix_ep2_1080p60.mp4` | SM(25) x ..ext06 | 512,408 | 8,540.3 s | `C:\Users\hyper\workspace\hyperporn\` (14.8 GB; G: was low) |
+| `ultramix_ep3_1080p60.mp4` | SM batch4 (sgas, ley1-5, drip1) x ext07..ext11 | 470,132 | 7,835.5 s | `G:\hyperporn\` (16.5 GB) |
+
+Ep3 note: its first mux had stretched video timestamps (container
+8,287.6 s for 7,835.5 s of frames, from a 4K part's timebase) —
+fixed losslessly with `-bsf:v setts=ts=N*256:duration=256` (no
+re-encode) and re-verified at exactly 60/1 fps. Total ultramix:
+24,916 s (6.92 h). Scratch/intermediates live in
+`C:\hyperporn_ultra_work\` (G: cannot hold them); they are
+regenerable from the two build scripts.
+
+## Episode build (`build_episodes.py`)
 
 SM×AI overlapping with all prior effects: intro/outro+logo trim
 (old SM: PIPELINE table; new SM + `ext*`: `detect_trims_v2.py`

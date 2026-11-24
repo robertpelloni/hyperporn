@@ -62,7 +62,7 @@ def run_pass(src, dst, info):
     vf = ("scale=1920:1080:force_original_aspect_ratio=decrease:flags=lanczos,"
           "pad=1920:1080:(ow-iw)/2:(oh-ih)/2,fps=60,format=yuv420p")
     cmd = [str(FF), "-y", "-hide_banner", "-loglevel", "error", "-i", str(src),
-           "-vf", vf, "-map", "0:v", "-map", "0:a?", *enc_args(),
+           "-vf", vf, "-map", "0:v:0", "-map", "0:a?", *enc_args(),
            "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
            "-movflags", "+faststart", str(dst)]
     r = subprocess.run(cmd, capture_output=True, text=True)

@@ -18,7 +18,8 @@ WORK = Path(__file__).resolve().parent
 FFD = WORK / "tools" / "ffmpeg-7.1.1-essentials_build" / "bin"
 W, H, PX = 160, 90, 160 * 90
 NEW_SM = ["csd1", "wct", "bcwt", "sas", "smb1", "bost2", "smb3",
-          "bcst", "uys", "cw"]  # scs2/scds2v deduped to _sm/_dup/
+          "bcst", "uys", "cw", "sgas", "ley1", "ley2", "ley3", "ley4",
+          "ley5", "drip1"]  # scs2/scds2v deduped to _sm/_dup/
 FILES = ([WORK / "_sm" / f"{s}.mp4" for s in NEW_SM] +
          [WORK / "_ai" / f"ext{i:02d}.mp4" for i in range(1, 16)])
 

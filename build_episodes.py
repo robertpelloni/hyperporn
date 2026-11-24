@@ -172,6 +172,14 @@ def main():
     episodes = [(1, 0, half), (2, half, total_clips)]
     for ep, c0, c1 in episodes:
         out = WORK / f"ultramix_ep{ep}_1080p60.mp4"
+        alt = Path(r"C:\Users\hyper\workspace\hyperporn") / out.name
+        if not out.exists() and alt.exists():
+            out = alt
+        elif not out.exists():
+            import shutil as _sh
+            if _sh.disk_usage(WORK).free / 1e9 < 22:  # G: cannot hold another ~19 GB
+                out = alt
+                log(f"ep{ep}: G: low, final goes to {out}")
         want_frames = (c1 - c0) * CLIP_F
         if out.exists() and nframes(out) == want_frames:
             log(f"ep{ep} exists, skip"); continue
@@ -203,12 +211,13 @@ def main():
             if r.returncode != 0 or nframes(copy_out) != n * CLIP_F:
                 log(f"ep{ep} concat FAIL"); return 1
             fc = ("[1:v]setpts=N/FRAME_RATE/TB,format=gbrp[m];[0:v]format=gbrp[a];"
-                  "[a][m]blend=all_mode=multiply:shortest=1,format=yuv420p[v]")
+                  "[a][m]blend=all_mode=multiply:shortest=1,format=yuv420p,"
+                  "tpad=stop_mode=clone:stop_duration=2[v]")
             r = subprocess.run([str(FF), "-y", "-hide_banner", "-loglevel", "error",
                                 "-i", str(copy_out), "-stream_loop", "-1", "-i", str(mask),
                                 "-filter_complex", fc, "-map", "[v]", "-an",
                                 "-c:v", "h264_nvenc", "-preset", "p5", "-rc", "vbr",
-                                "-cq", "22", "-b:v", "0", "-t", f"{n*CLIP_F/FPS:.6f}",
+                                "-cq", "22", "-b:v", "0", "-frames:v", str(n * CLIP_F),
                                 str(fade)], capture_output=True, text=True)
             got = nframes(fade) if fade.exists() else -1
             log(f"ep{ep} chunk {ci} fade rc={r.returncode} frames={got}")
