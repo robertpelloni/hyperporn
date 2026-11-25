@@ -140,9 +140,13 @@ def run_clip(src, dst, info, clip_work):
                         "-c", "copy", str(tmp)], capture_output=True, text=True)
     if r.returncode != 0:
         log(f"concat FAIL {src.name}"); return False
+    # Segment timestamps drift (~59.3 fps aggregate); rewrite the
+    # video timestamps onto the exact 60 fps grid (timebase 1/15360,
+    # 256 units/frame) losslessly at mux time - same fix as ep3.
     r = subprocess.run([str(FF), "-y", "-hide_banner", "-loglevel", "error",
                         "-i", str(tmp), "-i", str(src), "-map", "0:v", "-map", "1:a?",
-                        "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+                        "-c:v", "copy", "-bsf:v", "setts=ts=N*256:duration=256",
+                        "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
                         "-ac", "2", "-movflags", "+faststart", str(dst)],
                        capture_output=True, text=True)
     return r.returncode == 0
