@@ -52,3 +52,5 @@ on the GTX 1060 - see the catch-up file.
   protocol forbids purging binaries. Validation = `py_compile` on all new scripts (ALL_COMPILE_OK) + `.bat` path check.
   No processes killed (none belonging to this session were running).
 - Notable: `liveset60_v8/fade_chunk_01.mp4` is 0 bytes — next session should resume the v8 liveset from `chunk_list.txt`.
+
+Layout update 2026-11-24: G: relieved - hyperporn_v9_extended.mp4 + hyperporn_v8_*.mp4 moved to C: workspace checkout; _up1080/ and _max1080/ moved to M:\hyperporn_media\ with junctions at their G: paths (scripts unchanged); episode scratch C:\hyperporn_ultra_work junctioned to M:\hyperporn_ultra_work. ultramix_ep2_1080p60.mp4 moved INTO G: - all 3 episodes now in G:\hyperporn. Frees: C 150GB, G ~77GB, M 156GB at move time.
