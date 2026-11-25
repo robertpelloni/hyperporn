@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Maximal-quality 1080p TRUE-60fps tier for source materials ONLY.
 
 Per source clip in _sm/ + _ai/ (never _dup, never finished episodes),
@@ -57,13 +57,24 @@ def done_ok(p, want_frames):
     except Exception:
         return False
 
+def seg_ok(p, want_frames):
+    # Segment timestamps can drift on tiny tails; frames+res is the gate
+    # (the final clip still gets the strict fps check in done_ok).
+    if not p.exists():
+        return False
+    try:
+        i = probe(p)
+        return i["w"] == 1920 and i["h"] == 1080 and abs(i["frames"] - want_frames) <= 180
+    except Exception:
+        return False
+
 def free_gb(): return shutil.disk_usage(WORK).free / 1e9
 
 def enc_seg(inp_args, src_fps, seg_dur, seg):
     vf = ("scale=1920:1080:force_original_aspect_ratio=decrease:flags=lanczos,"
           "pad=1920:1080:(ow-iw)/2:(oh-ih)/2,format=yuv420p,"
           + (MI + "," if src_fps < 59 else "fps=60,")
-          + "tpad=stop_mode=clone:stop_duration=2")
+          + "tpad=stop_mode=clone:stop_duration=2,setpts=N/60/TB")
     cmd = [str(FF), "-y", "-hide_banner", "-loglevel", "error", *inp_args,
            "-vf", vf, "-an", "-c:v", "h264_nvenc", "-preset", "p5",
            "-rc", "vbr", "-cq", "18", "-b:v", "0",
@@ -82,14 +93,14 @@ def run_clip(src, dst, info, clip_work):
     for si, (start, seg_dur) in enumerate(bounds):
         seg = clip_work / f"seg_{si:04d}.mp4"
         segs.append(seg)
-        if done_ok(seg, round(seg_dur * 60)):
+        if seg_ok(seg, round(seg_dur * 60)):
             continue
         if free_gb() < 5:
             log("DISK LOW - abort"); return False
         if info["h"] >= 2000:  # already 4K: no ESRGAN, direct segment
             r = enc_seg(["-ss", f"{start:.3f}", "-i", str(src), "-t", f"{seg_dur:.3f}"],
                         info["fps"], seg_dur, seg)
-            if r.returncode != 0 or not done_ok(seg, round(seg_dur * 60)):
+            if r.returncode != 0 or not seg_ok(seg, round(seg_dur * 60)):
                 log(f"seg FAIL {src.name} {si} {(r.stderr or '')[-200:]}"); return False
         else:
             fin, fout = clip_work / f"f{si}", clip_work / f"u{si}"
@@ -115,7 +126,7 @@ def run_clip(src, dst, info, clip_work):
             r = enc_seg(["-framerate", f"{info['fps']:.6f}", "-i", str(fout / "f%05d.png")],
                         info["fps"], seg_dur, seg)
             shutil.rmtree(fin, ignore_errors=True); shutil.rmtree(fout, ignore_errors=True)
-            if r.returncode != 0 or not done_ok(seg, round(seg_dur * 60)):
+            if r.returncode != 0 or not seg_ok(seg, round(seg_dur * 60)):
                 log(f"seg encode FAIL {src.name} seg{si} {(r.stderr or '')[-200:]}")
                 return False
         log(f"  {src.name} seg {si+1}/{len(bounds)} ok (free {free_gb():.1f} GB)")
