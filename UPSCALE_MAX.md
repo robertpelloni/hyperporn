@@ -19,6 +19,21 @@ remain in `_up1080/work/drip1/` if ever wanted).
 
 Output: `_max1080/<folder>/<stem>_max1080p60.mp4`.
 
+## Completion list (frame-verified, 2026-11-24)
+
+Done (6): all 5 `magnific_*` clips (602f each, 10.1 s) and
+`sm4_max1080p60.mp4` (10,262f, 171.1 s, 59.98 fps).
+In progress: `smb1` (segments preserved in `_max1080/work/smb1/`).
+Queue after that, shortest first: cw, csd1, wct, uys, ley1, smb3,
+sas, ley3, bost2, ley2, sm3, sm2, csd2, scs, bcwt, ley4, bcst,
+sm1, sgas, ley5, sm5p1, sm5p2, sm6, sm7, sm8, sm9, bost, smx,
+then AI side ext07..ext04, ext01, ext08, ext10, ext09, ext13,
+ext02/ext03 (dup-length, distinct), ext12, ext14, ext11, ext15,
+and the long tail drip1 / ext05 / ext06 / wet.
+The older x2 tier (`_up1080/`, 49/53 done) has the same four
+long files left (drip1/ext05/ext06/wet); the max tier
+supersedes them, so that tier resumes only if this one stops.
+
 ## Measured costs on this GTX 1060 (why this is a grind)
 
 | Stage | Rate |
