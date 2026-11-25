@@ -210,8 +210,9 @@ def main():
                                 "-c", "copy", str(copy_out)], capture_output=True, text=True)
             if r.returncode != 0 or nframes(copy_out) != n * CLIP_F:
                 log(f"ep{ep} concat FAIL"); return 1
-            fc = ("[1:v]setpts=N/FRAME_RATE/TB,format=gbrp[m];[0:v]format=gbrp[a];"
-                  "[a][m]blend=all_mode=multiply:shortest=1,format=yuv420p,"
+            fc = ("[1:v]setpts=N/FRAME_RATE/TB,format=gbrp[m];"
+                  "[0:v]setpts=N/60/TB,format=gbrp[a];"
+                  "[a][m]blend=all_mode=multiply,format=yuv420p,"
                   "tpad=stop_mode=clone:stop_duration=2[v]")
             r = subprocess.run([str(FF), "-y", "-hide_banner", "-loglevel", "error",
                                 "-i", str(copy_out), "-stream_loop", "-1", "-i", str(mask),

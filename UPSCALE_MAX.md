@@ -57,9 +57,20 @@ frame-exact samples): ep3 near-black frames 4.5% vs ep1 10.2%
 the 26-frame mask fold in ep3 is *shallower* (dip ratio 0.76)
 than ep1 (0.20, = mask floor 48/255). Sampled ep3 sources
 (ext09, drip1, ley5, sgas) contain 0% near-black frames.
-Conclusion: no extra black strobe was added in ep3 - the
-perceived effect is most plausibly (a) luminance/resolution
-contrast between the dark low-res SM PMVs and the bright 4K AI
-sources alternating every 0.43 s, and/or (b) a specific section
-not sampled. Give a timestamp in ep3 and that exact window will
-be measured the same way.
+Conclusion at the time: no extra black strobe found - most
+plausibly source luminance contrast and/or an unsampled section.
+
+CORRECTION (2026-11-25, user timestamp 32:37): the user was
+right. That exact window (and the whole file) has drifting
+mask dips: near-black frames every ~50 frames with the dip
+slipping -3 frames per 52, fold ~0.93, while the mapped
+sources (ley2 ~260 s, ext08 ~706 s) contain zero black frames.
+Root cause: that build's fade timestamps drifted (same defect
+as its stretched container). Rebuilt as
+`ultramix_ep3_v2_1080p60.mp4` (fade video locked with
+`setpts=N/60/TB`, blend without `shortest=1` - change pair
+isolated on a test chunk first). V2 verifies fold 0.17-0.18
+at 32:37 and four other windows (= ep1's signature), 470,132
+frames. The general-sample verdict above was wrong because
+whole-file black-frame percentages hid the drift; per-window
+fold at a user timestamp is the reliable test.

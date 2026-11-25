@@ -52,7 +52,7 @@ def main():
     mask = OUTDIR / "mask_1080.mp4"
     pairs = sm_frames // CLIP_F
     total_clips = pairs * 2
-    out = WORK / "ultramix_ep3_1080p60.mp4"
+    out = WORK / "ultramix_ep3_v2_1080p60.mp4"  # v2: mask-timestamp fix (2026-11-25)
     alt = Path(r"C:\Users\hyper\workspace\hyperporn") / out.name
     if not out.exists() and not alt.exists():
         import shutil as _sh
@@ -85,8 +85,9 @@ def main():
                             "-c", "copy", str(copy_out)], capture_output=True, text=True)
         if r.returncode != 0 or be.nframes(copy_out) != n * CLIP_F:
             log("concat FAIL"); return 1
-        fc = ("[1:v]setpts=N/FRAME_RATE/TB,format=gbrp[m];[0:v]format=gbrp[a];"
-              "[a][m]blend=all_mode=multiply:shortest=1,format=yuv420p,"
+        fc = ("[1:v]setpts=N/FRAME_RATE/TB,format=gbrp[m];"
+              "[0:v]setpts=N/60/TB,format=gbrp[a];"
+              "[a][m]blend=all_mode=multiply,format=yuv420p,"
               "tpad=stop_mode=clone:stop_duration=2[v]")
         r = subprocess.run([str(FF), "-y", "-hide_banner", "-loglevel", "error",
                             "-i", str(copy_out), "-stream_loop", "-1", "-i", str(mask),
