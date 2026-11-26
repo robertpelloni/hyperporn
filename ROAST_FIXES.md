@@ -42,3 +42,5 @@ harvest later from the same marker).
 - Gemini's 5m13s drift figure assumes a true 140.00 bed for
   7.92 h; measured beds aren't 140, so the real statement is
   stronger and messier: cuts were never beat-locked at all.
+
+RESOLVED 2026-11-26: .git/index.lock was a stale 0-byte file from 2026-11-23 23:46 (proven unheld by exclusive-open test, user confirmed nothing running). Renamed to .git/index.lock.stale-20261126, git reset --mixed HEAD resynced the main index, status clean. Temp-index commits retired; normal git flow restored (ChatGPT #8 / Gemini #4 DONE).
