@@ -47,3 +47,7 @@
 - Full creation pipeline documented (`PIPELINE.md`, `PROJECT_BRIEF.md`).
 - Topaz 4K60 upscale stage (`TOPAZ_4K_UPSCALE.md`, `upscale_topaz.py`).
 - Hypo v5 audio builds, GOP26 intermediates, strobe/liveset-60fps tooling.
+
+## 1.3.1 - 2026-11-26 - Roast fixes round 2
+- ROAST_FIXES.md consolidates ChatGPT+Gemini roasts; Gemini BPM drift verified by measurement (beds ~138-147, not 140 - grid never kick-locked; fix needs measured tempo, user decision).
+- preflight.py (Gemini #6) PASS; vram_wait() VRAM backoff in upscale_max.py (Gemini #7).

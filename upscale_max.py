@@ -70,6 +70,22 @@ def seg_ok(p, want_frames):
 
 def free_gb(): return shutil.disk_usage(WORK).free / 1e9
 
+def vram_wait(min_free_mib=900):
+    # Gemini fix #7: don't fight desktop/WebGL workloads for the
+    # 3 GB card. Poll nvidia-smi; back off while VRAM is scarce.
+    for _ in range(30):
+        try:
+            r = subprocess.run(["nvidia-smi", "--query-gpu=memory.free",
+                                "--format=csv,noheader,nounits"],
+                               capture_output=True, text=True, timeout=15)
+            free = int((r.stdout or "0").strip().splitlines()[0])
+        except Exception:
+            return  # no nvidia-smi: proceed as before
+        if free >= min_free_mib:
+            return
+        log(f"VRAM low ({free} MiB free < {min_free_mib}); backing off 60s")
+        time.sleep(60)
+
 def enc_seg(inp_args, src_fps, seg_dur, seg):
     vf = ("scale=1920:1080:force_original_aspect_ratio=decrease:flags=lanczos,"
           "pad=1920:1080:(ow-iw)/2:(oh-ih)/2,format=yuv420p,"
@@ -115,6 +131,7 @@ def run_clip(src, dst, info, clip_work):
             if r.returncode != 0:
                 log(f"extract FAIL {src.name} seg{si}"); return False
             src_frames = len(list(fin.glob("*.png")))
+            vram_wait()
             scale = "4" if info["h"] < 1080 else "2"
             r = subprocess.run([str(ESR), "-i", str(fin), "-o", str(fout),
                                 "-n", f"realesr-animevideov3-x{scale}", "-s", scale,
