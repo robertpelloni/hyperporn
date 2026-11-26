@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 1.3.0 — 2026-11-26 — Roast cleanup, governance docs, QC/tests
+- Coordinated via Edge CDP :9222 with muse.ai (Bobbi), ChatGPT, Gemini
+  (markers HPN-COORD/ROAST-1126, identity "[model in harness in cwd]").
+  ChatGPT verdict: KEEP the project, KILL the uncontrolled optimization
+  loop. Gemini was still web-searching at commit time; Bobbi had not
+  yet replied - both threads carry the same prompt for later harvest.
+- Fixes landed: A/B quality gate (`AB_TEST.md`: x2 VMAF 77.8 vs max
+  43.3 against lanczos ref, with the interpolation caveat recorded);
+  76 scripts archived to `archive/scripts/` (15 canonical remain);
+  `qc_check.py` + `QC_REPORT.md` (all episodes fold 0.17-0.18);
+  `tests/test_pipeline.py` (5 tests, all passing); `VISION.md`,
+  `MEMORY.md`, `DEPLOY.md`, `IDEAS.md`, `STORAGE.md` added;
+  `ROADMAP.md` rewritten with a Definition of DONE; heavy jobs
+  pinned to BelowNormal priority.
+- Ultramix ep3 rebuilt fixed (`ultramix_ep3_1080p60.mp4` is now the
+  locked-mask build; drifting original backed up on M:).
+
 ## 1.2.0 — 2026-11-23 — Catch-up, new-video catalog/rename, v9 extension
 - Reviewed prior Muse sessions plus Antigravity session `5d99ed74` and both
   checkouts (`G:\hyperporn`, `~/workspace/hyperporn`); see

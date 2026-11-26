@@ -1,21 +1,27 @@
-# ROADMAP
+﻿# ROADMAP (rewritten 2026-11-26 after the ChatGPT/Gemini roast cycle)
 
 ## Done
-- v8 sissy rebuild with SM trim sheets (`rebuild_v8_smtrims.py`, verified via `verify_trim_sheets.py`)
-- Full creation pipeline documented (`PIPELINE.md`, `PROJECT_BRIEF.md`)
-- Topaz 4K60 upscale stage defined (`TOPAZ_4K_UPSCALE.md`, `upscale_topaz.py`)
-- Hypo v5 audio iteration (`hypo_mix_v5.m4a`, `build_hypo_v5.py`)
+- v8 masters (autodj + hypno, 646,464f) and v9 extended cut (1,711,400f, 7.92h)
+- Ultramix ep1/ep2/ep3 at 1080p60 (1,494,948f total, 6.92h), ep3 rebuilt with locked mask timestamps
+- Source pools organized (_sm 32 deduped / _ai 21), trims + dedupe verified perceptually
+- _up1080 x2 library 49/53; _max1080 maximal tier started (10/53 at rewrite time)
+- Storage relieved via M: junctions; episodes all in G:
+- Roast cleanup: 76 scripts archived, tests + QC report added, A/B decision gate recorded
 
-## Next
-1. Finish `liveset60_v8` — `fade_chunk_01.mp4` is 0 bytes (stalled/failed); resume from `chunk_list.txt`
-2. Lock v8: review `sm_trim_report_v8.json` against `framecheck/trimcheck/verify_v8.jpg`
-3. Topaz 4K60 upscale of finished masters
-4. Compress-to-2GB distribution variants (`compress_2gb_v6.py`)
+## Definition of DONE (ChatGPT fix #10)
+The project is DONE when: (1) _max1080 queue finishes or is explicitly frozen by the user,
+(2) episodes are either accepted as-is or rebuilt from the max library by user choice,
+(3) tests + QC pass, (4) docs and git are clean and pushed. No new enhancement tier
+starts without a benchmark + A/B gate (AB_TEST.md).
 
-## Submodule / layout map
-- No submodules (no `.gitmodules`). Single-repo layout:
-  - `intermediates/` — GOP26 intermediates, `sissy_parts5/`, concat lists
-  - `liveset60_v8/`, `liveset60_strobe/` — liveset builds
-  - `framecheck/` — intro/outro/spot/trimcheck verification frames
-  - `topaz-extract/`, `topaz-redist/`, `topaz-models*/` — Topaz binaries/models (untracked, rebuilt from MSI)
-  - `.hypernexus/` — agent memory/sessions (tracked); `catalog.db`, `hypernexus.db` — tracked
+## Next (ranked)
+1. Finish or freeze the _max1080 queue (tail: drip1/ext05/ext06/wet; or one rented-GPU day - IDEAS.md)
+2. Optional episode remasters from the max library; optional strobe-free variants (mask-depth flag)
+3. Manifest-driven single pipeline + content-addressed stage cache (ChatGPT #2/#3)
+4. Beat-grid measurement (real BPM per bed) replacing the fixed 26f assumption (#4)
+5. Git lock resolution when the external holder releases (resync main index)
+6. Compress-to-2GB distribution variants of the episodes
+
+## Layout
+Single repo, no submodules in G: (C: checkout carries ComfyUI/sd-scripts/topaz-ffmpeg
+submodules, pinned on purpose). See STORAGE.md and DEPLOY.md for the working layout.

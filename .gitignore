@@ -70,3 +70,5 @@ tools/
 
 # 1080p60 upscale outputs + ESRGAN work frames (local media, regenerable)
 _up1080/
+
+_max1080/
